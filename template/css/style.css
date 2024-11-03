@@ -1,4 +1,8 @@
-@import url(./src/css/modal.css);
+@import url(./modal.css);
+@import url(./products.css);
+@import url(./store.css);
+@import url(./footer.css);
+
 
 /* Variables globales */
 :root {
