@@ -1,0 +1,244 @@
+[
+    {
+        "id": 1,
+        "type": "consola",
+        "tag": ["Sony"],
+        "name": "PlayStation 5",
+        "description": "La consola de juegos de Sony.",
+        "price": 25000,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 2,
+        "type": "consola",
+        "tag": ["Sony"],
+        "name": "PlayStation 4",
+        "description": "La consola de juegos de Sony.",
+        "price": 15000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 3,
+        "type": "consola",
+        "tag": ["Microsoft"],
+        "name": "Xbox One",
+        "description": "La consola de juegos de Microsoft.",
+        "price": 20000,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 4,
+        "type": "consola",
+        "tag": ["Microsoft"],
+        "name": "Xbox 360",
+        "description": "La consola de juegos de Microsoft.",
+        "price": 10000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 5,
+        "type": "consola",
+        "tag": ["Nintendo"],
+        "name": "Nintendo Switch",
+        "description": "La consola de juegos de Nintendo.",
+        "price": 25000,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 6,
+        "type": "consola",
+        "tag": ["Nintendo"],
+        "name": "Nintendo Wii U",
+        "description": "La consola de juegos de Nintendo.",
+        "price": 15000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 7,
+        "type": "consola",
+        "tag": ["Nintendo"],
+        "name": "Nintendo Wii",
+        "description": "La consola de juegos de Nintendo.",
+        "price": 10000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 8,
+        "type": "consola",
+        "tag": ["Sony"],
+        "name": "PlayStation 3",
+        "description": "La consola de juegos de Sony.",
+        "price": 10000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 9,
+        "type": "consola",
+        "tag": ["Sony"],
+        "name": "PlayStation 2",
+        "description": "La consola de juegos de Sony.",
+        "price": 5000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 10,
+        "type": "consola",
+        "tag": ["Nintendo"],
+        "name": "Nintendo GameCube",
+        "description": "La consola de juegos de Nintendo.",
+        "price": 5000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+
+    {
+        "id": 11,
+        "type": "videojuego",
+        "tag": ["PC","Playstation 2","Playstation 3"],
+        "name": "The Elder Scrolls V: Skyrim",
+        "description": "Videojuego de rol de Bethesda.",
+        "price": 2500,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 12,
+        "type": "videojuego",
+        "tag": ["PC","Playstation 4","Playstation 5"],
+        "name": "The Witcher 3: Wild Hunt",
+        "description": "Videojuego de rol de CD Projekt RED.",
+        "price": 2000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 13,
+        "type": "videojuego",
+        "tag": ["PC","Playstation 4","Playstation 5"],
+        "name": "The Last of Us Remastered",
+        "description": "Videojuego de supervivencia de Naughty Dog.",
+        "price": 2500,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 14,
+        "type": "videojuego",
+        "tag": ["PC","Playstation 2","Playstation 3","Playstation 4"],
+        "name": "Grand Theft Auto V",
+        "description": "Videojuego de acción de Rockstar Games.",
+        "price": 3000,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 15,
+        "type": "videojuego",
+        "tag": ["PC"],
+        "name": "PlayerUnknown's Battlegrounds",
+        "description": "Videojuego de batalla real de Bluehole.",
+        "price": 2000,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 16,
+        "type": "videojuego",
+        "tag": ["PC"],
+        "name": "Overwatch",
+        "description": "Videojuego de disparos de Blizzard.",
+        "price": 2500,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 17,
+        "type": "videojuego",
+        "tag": ["Nintendo"],
+        "name": "The Legend of Zelda: Breath of the Wild",
+        "description": "Videojuego de aventura de Nintendo.",
+        "price": 2500,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 18,
+        "type": "videojuego",
+        "tag": ["PC","Nintendo","Playstation 4"],
+        "name": "Diablo III",
+        "description": "Videojuego de rol de acción de Blizzard.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 19,
+        "type": "videojuego",
+        "tag": ["PC","Nintendo","Playstation 4"],
+        "name": "Tom Clancy's Ghost Recon: Wildlands",
+        "description": "Videojuego de estrategia de Ubisoft.",
+        "price": 2000,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 20,
+        "type": "videojuego",
+        "tag": ["PC"],
+        "name": "Counter-Strike: Global Offensive",
+        "description": "Videojuego de disparos de Valve Corporation.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 21,
+        "type": "videojuego",
+        "tag": ["PC"],
+        "name": "Dota 2",
+        "description": "Videojuego de estrategia de Valve Corporation.",
+        "price": 0,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 22,
+        "type": "videojuego",
+        "tag": ["PC","Playstation 2","Playstation 3"],
+        "name": "Minecraft",
+        "description": "Videojuego de supervivencia de Mojang.",
+        "price": 2000,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    },
+    {
+        "id": 23,
+        "type": "videojuego",
+        "tag": ["PC"],
+        "name": "League of Legends",
+        "description": "Videojuego de estrategia de Riot Games.",
+        "price": 0,
+        "image": "https://picsum.photos/200",
+        "promo": false
+    },
+    {
+        "id": 24,
+        "type": "videojuego",
+        "tag": ["PC"],
+        "name": "World of Warcraft",
+        "description": "Videojuego de rol de Blizzard.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": true
+    }
+]
+

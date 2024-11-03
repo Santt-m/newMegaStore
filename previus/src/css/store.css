@@ -1,0 +1,130 @@
+@import url(./products.css);
+
+
+/* products */
+.product-section {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-section h2 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Contenedor de filtros */
+.filter-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    box-shadow: var(--std-box-shadow);
+}
+
+/* Botones de filtro */
+.filter-container button {
+    width: 120px;
+    height: 60px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.filter-container button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.filter-container button:active {
+    scale: 0.95;
+}
+
+.filter-container button:focus {
+    scale: 1.05;
+}
+
+/* Campo de búsqueda */
+.filter-container input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.filter-container input[type="text"]:active {
+    border: 1px solid #73ff00;
+}
+
+.filter-container input[type="text"]:focus {
+    border: 1px solid #fbff00;
+    scale: 1.05;
+}
+
+.filter-container input[type="text"]:hover {
+    border: 1px solid #0051ff;
+}
+
+/* Contenedor de productos */
+.product-container {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (min-width: 768px) {
+    .product-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+        text-align: center;
+    }
+
+    .product-container {
+        width: 75%;
+    }
+
+    .filter-container {
+        min-width: 150px;
+        width: 15%;
+        height: 90%;
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 250px;
+    }
+}

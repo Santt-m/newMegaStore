@@ -1,0 +1,320 @@
+/* company */
+#secCompany {
+    margin-top: 2vh;
+    width: 95%;
+    min-height: 30vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialNetworksList {
+    width: 80%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%;
+}
+
+.socialNetworksList li {
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: var(--std-box-shadow);
+}
+
+.socialNetworksList li:hover {
+    box-shadow: var(--std-box-shadow-hover);
+}
+
+.socialNetworksList img {
+    width: 30px;
+    height: 30px;
+}
+
+#companySocialNetworks {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%;
+}
+
+#secCompany .companyDesc {
+    width: 100%;
+    border: 1px solid var(--std-border-color);
+    border-radius: var(--std-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    box-shadow: var(--std-box-shadow);
+    transition: all 0.5s ease;
+}
+
+#secCompany .companyHeader {
+    width: 100%;
+    position: relative;
+    top: -80px;
+
+    padding-left: 50px;
+    margin-top: 4px;
+    text-align: center;
+
+    background-color: #e0e0e0;
+    box-shadow: var(--std-box-shadow);
+    border-radius: 8px 8px 0px 0px;
+}
+
+#secCompany .companyLogo {
+    width: 50px;
+    height: 75px;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+    background-color: var(--background-color);
+    border: 2px solid var(--std-border-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+#secCompany .companyLogo:hover {
+    border-color: var(--std-border-color-hover);
+}
+
+#secCompany .companyInfo {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#secCompany .companyInfo p {
+    width: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--secondary-color);
+    font-size: var(--secondary-font-size);
+    font-weight: var(--secondary-font-weight);
+    letter-spacing: var(--secondary-letter-spacing);
+    background-color: white;
+    border-radius: var(--std-border-radius);
+    box-shadow: var(--std-box-shadow);
+    transition: all 0.5s ease;
+}
+
+#secCompany .companyInfo p:hover {
+    box-shadow: var(--std-box-shadow-hover);
+    color: var(--font-p-color-hover);
+}
+
+#secCompany .companyInfo a {
+    padding: 2px;
+    color: var(--secondary-color);
+    font-size: var(--secondary-font-size);
+    font-weight: var(--secondary-font-weight);
+    letter-spacing: var(--secondary-letter-spacing);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.5s ease;
+}
+
+#secCompany .companyInfo a:hover {
+    color: var(--font-p-color-hover);
+}
+
+#secCompany .companyActions {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%;
+}
+
+
+/* Estilos para la tabla de horarios en el modal */
+.horariosTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.horariosTable th, .horariosTable td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--std-borderColor);
+}
+
+.horariosTable th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.horariosTable td {
+    background-color: #f9f9f9;
+}
+
+.horariosTable tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para la tabla de redes sociales en el modal */
+.socialNetworksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.socialNetworksTable th, .socialNetworksTable td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--std-borderColor);
+}
+
+.socialNetworksTable th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.socialNetworksTable td {
+    background-color: #f9f9f9;
+}
+
+.socialNetworksTable tr:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Estilos para las secciones de productos del menú */
+.product-section{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-product-section {
+    padding: 2rem;
+}
+
+.menu-product-section h2 {
+    margin-bottom: 1rem;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.filter-container input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.filter-container button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.product-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-product-card {
+    width: 90%;
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-product-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu-product-details {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.menu-product-details h3 {
+    margin: 0 0 0.5rem;
+}
+
+.menu-product-details p {
+    margin: 0.5rem 0;
+}
+
+.menu-product-price {
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.menu-product-controls {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 2px;
+}
+
+.menu-product-controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.menu-product-controls span {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    width: 40px;
+    text-align: center;
+}

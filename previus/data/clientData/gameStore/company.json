@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Game Store",
+        "description": "Ecomerse de videojuegos",
+        "image": "https://picsum.photos/200",
+        "icon": "https://picsum.photos/50",
+        "heroBackgroundImage": "https://picsum.photos/800/400",
+        "whatsapp": "+1111111111",
+        "address": "Avenida Gamer 789",
+        "phone": "+1122334455",
+        "email": "support@gamestore.com",
+        "horarios": [
+            {
+              "day": "Lunes",
+              "hours": "0:00 - 23:59"
+            },
+            {
+              "day": "Martes",
+              "hours": "0:00 - 23:59"
+            },
+            {
+              "day": "Miércoles",
+              "hours": "0:00 - 23:59"
+            },
+            {
+              "day": "Jueves",
+              "hours": "0:00 - 23:59"
+            },
+            {
+              "day": "Viernes",
+              "hours": "0:00 - 23:59"
+            },
+            {
+              "day": "Sábado",
+              "hours": "0:00 - 23:59"
+            },
+            {
+              "day": "Domingo",
+              "hours": "0:00 - 23:59"
+            }
+          ],
+          "envios": [
+            { "day": "Lunes", "hours": "00:00 - 23:59"},
+            { "day": "Martes", "hours": "00:00 - 23:59"},
+            { "day": "Miércoles", "hours": "00:00 - 23:59"},
+            { "day": "Jueves", "hours": "00:00 - 23:59" },
+            { "day": "Viernes", "hours": "00:00 - 23:59"},
+            { "day": "Sábado", "hours": "00:00 - 23:59"},
+            { "day": "Domingo", "hours": "00:00 - 23:59"}
+          ],
+          "socialNetworks": [
+            {
+              "name": "Facebook",
+              "link": "https://www.facebook.com"
+            },
+            {
+              "name": "Instagram",
+              "link": "https://www.instagram.com"
+            },
+            {
+              "name": "Twitter",
+              "link": "https://www.twitter.com"
+            },
+            {
+              "name": "Youtube",
+              "link": "https://www.youtube.com"
+            },
+            {
+              "name": "Tiktok",
+              "link": "https://www.tiktok.com"
+            }
+          ],
+        "store": "./clientData/gameStore/products.json"
+    }
+]

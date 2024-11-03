@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "type": "entrada",
+        "tag": ["Vegetariano"],
+        "name": "Ensalada César",
+        "description": "Ensalada César con aderezo casero.",
+        "price": 1200,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 2,
+        "type": "plato principal",
+        "tag": ["Carne"],
+        "name": "Bife de Chorizo",
+        "description": "Bife de chorizo a la parrilla con guarnición.",
+        "price": 2500,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 3,
+        "type": "postre",
+        "tag": ["Dulce"],
+        "name": "Tiramisú",
+        "description": "Tiramisú clásico italiano.",
+        "price": 800,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 4,
+        "type": "bebida",
+        "tag": ["Sin Alcohol"],
+        "name": "Limonada",
+        "description": "Limonada fresca con menta.",
+        "price": 500,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 5,
+        "type": "bebida",
+        "tag": ["Con Alcohol"],
+        "name": "Mojito",
+        "description": "Mojito clásico cubano.",
+        "price": 900,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": true
+    }
+]

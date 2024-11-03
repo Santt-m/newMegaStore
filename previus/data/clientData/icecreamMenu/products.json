@@ -1,0 +1,225 @@
+[
+    {
+        "id": 1,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Fresa", "Verano"],
+        "name": "Torta Helada de Fresa",
+        "description": "Torta helada de fresa con trozos de fresa.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 2,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Mango", "Exótico"],
+        "name": "Torta Helada de Mango",
+        "description": "Torta helada de mango con trozos de mango.",
+        "price": 1600,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 3,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Durazno", "Verano"],
+        "name": "Torta Helada de Durazno",
+        "description": "Torta helada de durazno con trozos de durazno.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 7,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Limón", "Cítrico"],
+        "name": "Torta Helada de Limón",
+        "description": "Torta helada de limón con trozos de limón.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 8,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Piña", "Exótico"],
+        "name": "Torta Helada de Piña",
+        "description": "Torta helada de piña con trozos de piña.",
+        "price": 1600,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 11,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Cereza", "Verano"],
+        "name": "Torta Helada de Cereza",
+        "description": "Torta helada de cereza con trozos de cereza.",
+        "price": 1550,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 12,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Uva", "Exótico"],
+        "name": "Torta Helada de Uva",
+        "description": "Torta helada de uva con trozos de uva.",
+        "price": 1650,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 13,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Melón", "Verano"],
+        "name": "Torta Helada de Melón",
+        "description": "Torta helada de melón con trozos de melón.",
+        "price": 1500,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 14,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Sandía", "Verano"],
+        "name": "Torta Helada de Sandía",
+        "description": "Torta helada de sandía con trozos de sandía.",
+        "price": 1600,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 15,
+        "type": "tortas heladas",
+        "tag": ["Frutas", "Kiwi", "Exótico"],
+        "name": "Torta Helada de Kiwi",
+        "description": "Torta helada de kiwi con trozos de kiwi.",
+        "price": 1550,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 4,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Chocolate", "Dulce"],
+        "name": "Bombón Helado de Chocolate",
+        "description": "Bombón helado de chocolate con trozos de chocolate.",
+        "price": 1700,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 5,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Caramelo", "Dulce"],
+        "name": "Bombón Helado de Caramelo",
+        "description": "Bombón helado de caramelo con trozos de caramelo.",
+        "price": 1800,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 6,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Coco", "Exótico"],
+        "name": "Bombón Helado de Coco",
+        "description": "Bombón helado de coco con trozos de coco.",
+        "price": 1700,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 9,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Pistacho", "Exótico"],
+        "name": "Bombón Helado de Pistacho",
+        "description": "Bombón helado de pistacho con trozos de pistacho.",
+        "price": 1800,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 10,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Café", "Dulce"],
+        "name": "Bombón Helado de Café",
+        "description": "Bombón helado de café con trozos de café.",
+        "price": 1700,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 16,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Vainilla", "Dulce"],
+        "name": "Bombón Helado de Vainilla",
+        "description": "Bombón helado de vainilla con trozos de vainilla.",
+        "price": 1750,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 17,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Menta", "Refrescante"],
+        "name": "Bombón Helado de Menta",
+        "description": "Bombón helado de menta con trozos de menta.",
+        "price": 1650,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 18,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Avellana", "Exótico"],
+        "name": "Bombón Helado de Avellana",
+        "description": "Bombón helado de avellana con trozos de avellana.",
+        "price": 1800,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    },
+    {
+        "id": 19,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Almendra", "Exótico"],
+        "name": "Bombón Helado de Almendra",
+        "description": "Bombón helado de almendra con trozos de almendra.",
+        "price": 1750,
+        "image": "https://picsum.photos/200",
+        "promo": false,
+        "alcoholic": false
+    },
+    {
+        "id": 20,
+        "type": "bombones helados",
+        "tag": ["Chocolates", "Nuez", "Exótico"],
+        "name": "Bombón Helado de Nuez",
+        "description": "Bombón helado de nuez con trozos de nuez.",
+        "price": 1700,
+        "image": "https://picsum.photos/200",
+        "promo": true,
+        "alcoholic": false
+    }
+]
+
+
+
