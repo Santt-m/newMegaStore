@@ -1,5 +1,5 @@
 import Modal from './modal.js';
-import { getIconUrl } from '../icon/icons.js';
+import { getIconUrl } from './icons.js';
 
 /**
  * Función para renderizar la sección de la compañía

@@ -1,5 +1,5 @@
-import { fetchDataList } from '../../data/dataIO.js';
-import "../components/header/header.js";
+import { fetchDataList } from './dataIO.js';
+import "./header.js";
 import Modal from './modal.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     dataList.forEach((item) => {
         const card = document.createElement("li");
         card.className = "store-card";
-        
+
         // Genera el contenido HTML de la tarjeta
         card.innerHTML = `
             <h3>${item.company}</h3>
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const contactForm = document.querySelector("#secContact form");
     contactForm.addEventListener("submit", (event) => {
         event.preventDefault();
-        
+
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
