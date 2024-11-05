@@ -34,7 +34,7 @@
         <nav aria-label="Navegación principal" role="navigation">
             <a href="./index.html">Inicio</a>
             <a href="./index.html#beneficios">Beneficios</a>
-            <a href="./index.html#contratar">Planes</a>
+            <a href="./index.html#planes">Planes</a>
             <a href="./index.html#contacto">Contacto</a>
         </nav>
         <form aria-label="Menú de navegación móvil">
@@ -55,7 +55,7 @@
             <h1>Pedidos por </h1>
             <p>Impulsa tu negocio con una presencia en línea.</p>
             <p>Recibi pedidos por whatsapp</p>
-            <a id="btn-hero" href="./index.html#contratar" title="Ver planes">👉 ¡ Crear mi tienda !</a>
+            <a id="btn-hero" href="./index.html#planes" title="Ver planes">👉 ¡ Crear mi tienda !</a>
         </article>
         <picture>
             <img src="./assets/heroImage.png" alt="Muestra de ecommerce">
@@ -116,7 +116,7 @@
             <h2>Todas las tiendas que creamos contienen</h2>
         </header>
         <ul>
-            <li class="b_card">
+            <li>
                 <picture>
                     <img src="./assets/seguridad-ssl-96.png" alt="Ícono de seguridad SSL">
                 </picture>
@@ -125,7 +125,7 @@
                     <dd>Tu tienda sera segura con tecnología de encriptación.</dd>
                 </dl>
             </li>
-            <li class="b_card">
+            <li>
                 <picture>
                     <img src="./assets/tienda-en-línea-80.png" alt="Ícono de tienda en línea">
                 </picture>
@@ -134,7 +134,7 @@
                     <dd>No cobramos comisiones.</dd>
                 </dl>
             </li>
-            <li class="b_card">
+            <li>
                 <picture>
                     <img src="./assets/menuImg.png" alt="Celular con el menú">
                 </picture>
@@ -143,7 +143,7 @@
                     <dd>Mejoraremos fidelización a tus clientes</dd>
                 </dl>
             </li>
-            <li class="b_card">
+            <li>
                 <picture>
                     <img src="./assets/responsive-design-64.png" alt="Ícono de diseño responsive">
                 </picture>
@@ -155,47 +155,28 @@
         </ul>
     </section>
 
-    <section id="contratar">
+    <section id="planes">
         <header>
             <h2>Elegí el plan ideal para tu negocio</h2>
         </header>
         <ol>
-            <li>
-                <p class="hat" aria-label="Plan recomendado ❤️​">❤️​</p>
-                <div>
-                    <p class="type">Profesional</p>
-                    <h5>Dominio propio</h5>
-                    <p class="msg">Compra tu sitio web con nosotros</p>
-                    <h6>$100</h6>
-                    <button id="btnAsesorate" aria-label="Asesorate aquí">Asesorate aquí</button>
-                </div>
+            <li class="plan plan-popular">
+                <!-- <p class="hat show" aria-label="Plan más popular ⭐​">⭐​ Más popular</p> -->
+                <h3>Esencial</h3>
+                <h6>$25000 <span>al mes</span></h6>
+                <p>Profesionalizá tu negocio y aumentá tus ventas</p>
             </li>
-            <li>
-                <p class="hat show" aria-label="Plan más popular ⭐​">⭐​ Más popular</p>
-                <div>
-                    <p class="type">Esencial</p>
-                    <h5>Profesionalizá tu negocio y aumentá tus ventas</h5>
-                    <h6>$10 / mes</h6>
-                    <button aria-label="Comprar Ya">Comprar Ya</button>
-                </div>
+            <li class="plan plan-destacado">
+                <!-- <p class="hat" aria-label="Plan recomendado ❤️​">❤️​</p> -->
+                <h3>Profesional</h3>
+                <h6>$50000 <span>al mes</span></h6>
+                <p>Subdominio personalizado y Autoadminstrable</p>
             </li>
-            <li>
-                <p class="hat" aria-label="Oferta 20% descuento 🔥">🔥 20% off</p>
-                <div>
-                    <p class="type">Empresarial</p>
-                    <h5>Profesionalizá tu negocio y aumentá tus ventas</h5>
-                    <h6>$100 / Año</h6>
-                    <button aria-label="Comprar Ya">Comprar Ya</button>
-                </div>
-            </li>
-            <li>
-                <p class="hat" aria-label="Plan especial para tu marca 🔮">🔮 Un plan para tu marca</p>
-                <div>
-                    <p class="type">Impulso</p>
-                    <h5>Profesionalizá tu negocio y aumentá tus ventas</h5>
-                    <h6>$30 / mes</h6>
-                    <button aria-label="Comprar Ya">Comprar Ya</button>
-                </div>
+            <li class="plan plan-empresarial">
+                <!-- <p class="hat" aria-label="Oferta 20% descuento 🔥">🔥 20% off</p> -->
+                <h3>Empresarial</h3>
+                <h6>$150000 <span>al mes</span></h6>
+                <p>Subdominio personalizado, autoadminstrable y metricas de tus clientes </p>
             </li>
         </ol>
     </section>
@@ -225,7 +206,7 @@
     <footer>
         <article>
             <p>Desarrollado por:</p>
-            <p>Santiago Maruottolo</p>
+            <h2>Santiago Maruottolo</h2>
             <p>❤️</p>
         </article>
         <nav class="ContIcons">
