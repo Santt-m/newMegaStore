@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
-  --bg-primary: #d2691e;
-  --alt-primary: #a52a2a;
-  --bg-secondary: #898121;
-  --alt-secondary: #4c4b16;
+  --bg-primary: #e86a33;
+  --alt-primary: #f2e3db;
+  --bg-secondary: #41644a;
+  --alt-secondary: #263a29;
   --font-head: "Archivo", sans-serif;
   --font-text: "Rubik", sans-serif;
+  --font-brand: "Josefin Slab", serif;
 }
 
 * {
@@ -17,6 +17,13 @@
   box-sizing: border-box;
   font-family: var(--font-text);
 }
+html {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
 
 body {
   max-width: 1280px;
@@ -24,8 +31,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  align-items: center;
-  align-content: start;
   width: 100%;
 }
 
@@ -48,4 +53,10 @@ a {
 ol,
 ul {
   list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
