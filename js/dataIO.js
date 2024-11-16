@@ -1,6 +1,6 @@
 // ./data/dataIO.js
 
-const BASE_URL = './data/';
+const BASE_URL = './';
 
 /**
  * Función para obtener el contenido de dataList.json

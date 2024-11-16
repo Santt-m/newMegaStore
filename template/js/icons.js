@@ -1,21 +1,19 @@
-// ./src/icon/icons.js
-
 const icons = [
-    { name: 'plus', url: './src/icon/plus.svg' },
-    { name: 'minus', url: './src/icon/minus.svg' },
-    { name: 'bard', url: './src/icon/bard.svg' },
-    { name: 'cart-empty', url: './src/icon/cart-emply.svg' },
-    { name: 'cart-full', url: './src/icon/cart-full.svg' },
-    { name: 'facebook', url: './src/icon/facebook.svg' },
-    { name: 'github', url: './src/icon/github-light.svg' },
-    { name: 'gmail', url: './src/icon/gmail.svg' },
-    { name: 'instagram', url: './src/icon/instagram.svg' },
-    { name: 'linkedin', url: './src/icon/linkedin.svg' },
-    { name: 'telegram', url: './src/icon/telegram.svg' },
-    { name: 'tiktok', url: './src/icon/tiktok.svg' },
-    { name: 'twitter', url: './src/icon/twitter.svg' },
-    { name: 'whatsapp', url: './src/icon/whatsapp.svg' },
-    { name: 'youtube', url: './src/icon/youtube.svg' }
+    { name: 'plus', url: '../icon/plus.svg' },
+    { name: 'minus', url: '../icon/minus.svg' },
+    { name: 'bard', url: '../icon/bard.svg' },
+    { name: 'cart-empty', url: '../icon/cart-emply.svg' },
+    { name: 'cart-full', url: '../icon/cart-full.svg' },
+    { name: 'facebook', url: '../icon/facebook.svg' },
+    { name: 'github', url: '../icon/github-light.svg' },
+    { name: 'gmail', url: '../icon/gmail.svg' },
+    { name: 'instagram', url: '../icon/instagram.svg' },
+    { name: 'linkedin', url: '../icon/linkedin.svg' },
+    { name: 'telegram', url: '../icon/telegram.svg' },
+    { name: 'tiktok', url: '../icon/tiktok.svg' },
+    { name: 'twitter', url: '../icon/twitter.svg' },
+    { name: 'whatsapp', url: '../icon/whatsapp.svg' },
+    { name: 'youtube', url: '../icon/youtube.svg' }
 ];
 
 /**
