@@ -6,8 +6,8 @@ import { createStatusElement, updateStatus } from './js/status.js';
 import { renderProducts } from './js/products.js';
 
 let companyWhatsApp = '';
-const companyDataUrl = './data/company.json';
-const productsDataUrl = './data/products.json';
+let companyDataUrl = './data/company.json';
+let productsDataUrl = './data/products.json';
 
 // Función para obtener el número de WhatsApp de la compañía
 export function getCompanyWhatsApp() {
