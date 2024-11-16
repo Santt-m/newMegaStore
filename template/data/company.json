@@ -2,9 +2,9 @@
   {
     "name": "Food Store",
     "description": "Ecomerse de comida",
-    "image": "./data/clientData/foodStore/logo.jpeg",
+    "image": "https://picsum.photos/200/300?random=26",
     "icon": "",
-    "heroBackgroundImage": "./data/clientData/foodStore/hero_background.webp",
+    "heroBackgroundImage": "https://picsum.photos/200/300?random=26",
     "whatsapp": "+1111111111",
     "address": "Alguna calle",
 

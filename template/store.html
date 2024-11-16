@@ -5,90 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="app.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Inicio | MegaStore</title>
 </head>
+<header>
+    <div class="colgante">
+        <div id="cartBtn">
+            <p id="cartCount">0</p>
+            <img id ="cartImg" src="../icon/cart-emply.svg" alt="carrito de compras" loading="lazy">
+        </div>
+    </div>
+    <div id="cartContent">
+        <div class="cartHeader">
+            <nav>
+                <button id="cartBtnCart">Carrito</button>
+                <button id="cartBtnUser">Mis datos</button>
+                <button id="cartBtnFinish">Finalizar</button>
+            </nav>
+            <button id="cartBtnClose">X</button>
+        </div>
+        <div id="cart">
+            <h3>Carrito de compras</h3>
+            <ol id="cartList"></ol>
+            <p id="cartTotal"></p>
+            <button id="emptyCartButton">Vaciar Carrito</button>
+        </div>
+        <div id="userDataContent">
+            <h3>Mis datos</h3>
+            <form action="userData">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+                <label for="lastName">Apellido</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="number">Nº de celular:</label>
+                <input type="text" name="number" id="number">
+                <fieldset>
+                    <legend>Método de recibo de pedido</legend>
+                    <input type="radio" name="method" id="takeAway">
+                    <label for="takeAway">Retiro por el local</label>
+                    <input type="radio" name="method" id="envio">
+                    <label for="envio">Envío</label>
+                </fieldset>
+            </form>
+            <form id="envioDetails" style="display: none;">
+                <label for="address">Dirección</label>
+                <input type="text" name="address" id="address">
+                <label for="addressNumber">Nº de dirección</label>
+                <input type="number" name="addressNumber" id="addressNumber">
+                <label for="floor">Piso</label>
+                <input type="text" name="floor" id="floor">
+                <label for="apartment">Departamento</label>
+                <input type="text" name="apartment" id="apartment">
+                <label for="reference">Referencia</label>
+                <input type="text" name="reference" id="reference">
+                <label for="city">Ciudad</label>
+                <input type="text" name="city" id="city">
+                <label for="country">País</label>
+                <input type="text" name="country" id="country">
+                <label for="postalCode">Código Postal</label>
+                <input type="text" name="postalCode" id="postalCode">
+            </form>
+            <button id="saveUserData">Guardar Datos</button>
+        </div>
+        <div id="buy">
+            <h3>Finalizar pedido</h3>
+            <h4>Resumen</h4>
+            <ul id="userList"></ul>
+            <ul id="buyList"></ul>
+            <p id="buyTotal"></p>
+            <button id="buyBtn">Enviar Pedido</button>
+        </div>
+    </div>
+</header>
 
 <body>
-
-    <header>
-        <div class="logoContainer">
-            <img src="./src/components/header/logo.png" alt="Mega Store logo" loading="lazy">
-        </div>
-        <nav>
-            <a href="#secCompany">Nosotros</a>
-            <a href="#secProducts">Productos</a>
-        </nav>
-        <div id="cartMenu">
-            <div id="cartCont">
-                <div class="cartHeader">
-                    <button class="btn" data-target="carrito">Carrito</button>
-                    <button class="btn" data-target="usuario">Usuario</button>
-                    <button class="btn" data-target="completarPedido">Completar Pedido</button>
-                </div>
-                <div class="carrito">
-                    <h3>Carrito</h3>
-                    <ul id="cartList"></ul>
-                    <button class="btn-clear-cart">Vaciar carrito</button>
-                </div>
-                <div class="usuario" style="display: none;">
-                    <h3>Usuario</h3>
-                    <form id="userForm">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name" placeholder="Nombre">
-                        <label for="lastName">Apellido</label>
-                        <input type="text" name="lastName" id="lastName" placeholder="Apellido">
-                        <label for="phone">Teléfono</label>
-                        <input type="text" name="phone" id="phone" placeholder="Teléfono">
-                        <fieldset>
-                            <legend>Opción de entrega</legend>
-                            <input type="radio" id="takeAway" name="deliveryOption" value="takeAway" checked>
-                            <label for="takeAway">Pasar a buscar por el local</label><br>
-                            <input type="radio" id="delivery" name="deliveryOption" value="delivery">
-                            <label for="delivery">Envío a domicilio</label>
-                        </fieldset>
-                    </form>
-                    <form id="envioForm" style="display: none;">
-                        <label for="address">Dirección</label>
-                        <input type="text" name="address" id="address" placeholder="Dirección">
-                        <label for="addressNumber">N°</label>
-                        <input type="text" name="addressNumber" id="addressNumber" placeholder="N°">
-                        <label for="departamento">Departamento</label>
-                        <input type="text" name="departamento" id="departamento" placeholder="Departamento">
-                        <label for="notas">Notas</label>
-                        <input type="text" name="notas" id="notas" placeholder="Notas">
-                        <button type="button" id="saveDeliveryDataBtn">Guardar Datos de Envío</button>
-                    </form>
-                </div>
-                <div class="completarPedido" style="display: none;">
-                    <h3>Completar pedido</h3>
-                    <h4>Usuario</h4>
-                    <ol id="userData"></ol>
-                    <h4>Pedido</h4>
-                    <ol id="orderData"></ol>
-                    <button class="btn-wp-order"><img class="icon" src="./src/icon/whatsapp.svg" alt="whatsapp icon"> Enviar pedido</button>
-                </div>
-            </div>
-        </div>
-        <div id="navBtnCont">
-            <div id="navBtn">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <div id="cartBtn">
-                <img id="cartIcon" src="./src/icon/cart-emply.svg" alt="cart empty icon" loading="lazy">
-                <span id="cartCount">0</span>
-            </div>
-        </div>
-    </header>
-    
-
     <main>
-        <!-- se renderiza segun store.js -->
+        <!-- Contenido principal -->
     </main>
-
     <footer>
         <div class="firma">
             <p>Desarrollado por:</p>
@@ -99,13 +93,14 @@
             ...
         </div>
         <div class="ContIcons">
-            <a href="https://github.com/santt-m"><img src="./src/icon/github-light.svg" alt="github icon" loading="lazy"> github</a>
-            <a href="https://www.linkedin.com/in/santiagomaruottolo/"><img src="./src/icon/linkedin.svg" alt="linkedin icon" loading="lazy"> linkedin</a>
+            <a href="https://github.com/santt-m"><img src="../icon/github-light.svg" alt="github icon"
+                    loading="lazy"> github</a>
+            <a href="https://www.linkedin.com/in/santiagomaruottolo/"><img src="../icon/linkedin.svg"
+                    alt="linkedin icon" loading="lazy"> linkedin</a>
         </div>
 
     </footer>
-
-    <script src="./src/js/store.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
 </body>
 
 </html>

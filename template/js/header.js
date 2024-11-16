@@ -1,33 +1,43 @@
-const navBtn = document.getElementById('navBtn');
-const navMenu = document.querySelector('nav');
+import { openOverlay, closeOverlay } from './modal.js';
 
 const cartBtn = document.getElementById('cartBtn');
-const cartMenu = document.getElementById('cartMenu')
+const cartContent = document.getElementById('cartContent');
 
-export function init () {
-    console.log('header init')
+function openCart() {
+    cartContent.style.display = 'flex';
+    cartContent.classList.remove('closing');
+    cartBtn.classList.add('active');
+    openOverlay();
+}
 
-    // boton nav
-    navBtn.addEventListener('click', () =>{
-        // si el nav esta active
-        if(navMenu.classList.contains('fx-active')){
-            // activa efecto de cierre
-            navMenu.classList.add('fx-close');
-            // deja pasar el efecto y borra las class
-            setTimeout(()=> {
-                navMenu.classList.remove('fx-active','fx-close')
-            },500);
-        }
-        // si el nav no esta active
-        else{
-            // forzar cierre cart
-            cartMenu.classList.add('dnone')
-            // activa el nav
-            navMenu.classList.add('fx-active');
-        };
+function closeCart() {
+    cartContent.classList.add('closing');
+    setTimeout(() => {
+        cartContent.style.display = 'none';
+        cartContent.classList.remove('closing');
+        cartBtn.classList.remove('active');
+        closeOverlay();
+    }, 500); // Esperar a que termine la animación
+}
 
+function toggleCart() {
+    if (cartContent.style.display === 'flex') {
+        closeCart();
+    } else {
+        openCart();
+    }
+}
+
+function handleClickOutside(evento) {
+    const overlay = document.querySelector('.overlay');
+    if (overlay && !overlay.contains(evento.target)) overlay.addEventListener('click', () => {
+        closeCart();
     });
-};
+}
 
-// Init al cargar el dom
+function init() {
+    cartBtn.addEventListener('click', toggleCart);
+    document.addEventListener('click', handleClickOutside);
+}
+
 document.addEventListener('DOMContentLoaded', init);

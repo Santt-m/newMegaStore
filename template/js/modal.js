@@ -2,17 +2,17 @@
 
 /* 
 
-import Modal from './modal.js';
+import Modal from './modal.js;
 
 EJEMPLO Modal !
 
 const modal = new Modal({
-  title: "Título del Modal",
+  title: "Título del Modal",
   content: "Contenido del Modal",
-  buttonText: "Cerrar",
+  actions: '<button class="custom-action-btn">Acción Personalizada</button>',
   type: "success",
 });
-modal.createModal(); // mosrar el modal
+modal.createModal(); // Mostrar el modal
 
 const modal = new Modal({
   message: 'mensaje del alerta',
@@ -26,48 +26,56 @@ modal.createAlert(); // Mostrar la alerta
 class Modal {
   constructor(options) {
     this.options = options;
-    this.alertContainer =
-      document.querySelector(".alert-container") || this.createAlertContainer();
+    this.alertContainer = document.querySelector(".alert-container") || this.createAlertContainer();
   }
 
   createModal() {
-    // Crear el overlay del modal
-    const overlay = document.createElement("div");
-    overlay.classList.add("modal-overlay");
+    openModalOverlay();
+    const modalContent = this.createModalContent();
+    document.body.appendChild(modalContent);
 
-    // Crear el contenido del modal
-    const modalContent = document.createElement("div");
-    modalContent.classList.add("modal-content");
-
-    modalContent.innerHTML = `
-        <div class="modal-header">
-          <h2>${this.options.title}</h2>
-          <span class="modal-close-icon">&times;</span>
-        </div>
-        <div class="modal-body">
-          ${this.options.content}
-        </div>
-        <div class="modal-footer">
-          <button class="modal-close-btn">${this.options.buttonText}</button>
-        </div>
-      `;
-
-    // Añadir el contenido del modal al overlay
-    overlay.appendChild(modalContent);
-    document.body.appendChild(overlay);
-
-    // Cerrar el modal al hacer clic en los botones de cierre
-    overlay.querySelector(".modal-close-icon").addEventListener("click", () => {
-      this.closeModal(overlay);
-    });
-    overlay.querySelector(".modal-close-btn").addEventListener("click", () => {
-      this.closeModal(overlay);
-    });
+    this.addCloseEvent(modalContent, '.modal-close-icon');
+    this.addCloseEvent(modalContent, '.modal-close-btn');
   }
 
-  closeModal(overlay) {
-    // Remover el modal del DOM
-    document.body.removeChild(overlay);
+  createModalContent() {
+    const modalContent = document.createElement("div");
+    modalContent.classList.add("modal-content");
+    modalContent.innerHTML = `
+      <div class="modal-header">
+        <h2>${this.options.title}</h2>
+        <span class="modal-close-icon">&times;</span>
+      </div>
+      <div class="modal-body">
+        ${this.options.content}
+      </div>
+      <div class="modal-footer">
+        ${this.options.actions || '<button class="modal-close-btn">Cerrar</button>'}
+      </div>
+    `;
+    return modalContent;
+  }
+
+  createOverlay(className) {
+    const overlay = document.createElement("div");
+    overlay.classList.add(className);
+    return overlay;
+  }
+
+  addCloseEvent(element, selector) {
+    const closeElement = element.querySelector(selector);
+    if (closeElement) {
+      closeElement.addEventListener("click", () => {
+        this.closeOverlay(element);
+      });
+    }
+  }
+
+  closeOverlay(element) {
+    if (element && element.parentNode) {
+      element.parentNode.removeChild(element);
+    }
+    closeModalOverlay();
   }
 
   createAlertContainer() {
@@ -78,41 +86,59 @@ class Modal {
   }
 
   createAlert() {
-    // Crear la alerta
-    const alert = document.createElement("div");
-    alert.classList.add("alert-overlay");
-
-    // Aplicar el tipo de alerta según la opción
+    const alert = this.createOverlay('alert-overlay');
     if (this.options.type) {
       alert.classList.add(`alert-${this.options.type}`);
     }
 
-    // Definir el contenido de la alerta
     alert.innerHTML = `
-        <p>${this.options.message}</p>
-        <button class="alert-close-btn">${this.options.buttonText}</button>
-      `;
+      <p>${this.options.message}</p>
+      <button class="alert-close-btn">${this.options.buttonText}</button>
+    `;
 
-    // Añadir la alerta al contenedor de alertas
     this.alertContainer.appendChild(alert);
+    this.addCloseEvent(alert, '.alert-close-btn');
 
-    // Cerrar la alerta al hacer clic en el botón
-    alert.querySelector(".alert-close-btn").addEventListener("click", () => {
-      this.closeAlert(alert);
-    });
-
-    // Desaparecer automáticamente después de 5 segundos
     setTimeout(() => {
-      this.closeAlert(alert);
+      this.closeOverlay(alert);
     }, 5000);
-  }
-
-  closeAlert(alert) {
-    // Remover la alerta del DOM
-    if (alert && alert.parentNode) {
-      alert.parentNode.removeChild(alert);
-    }
   }
 }
 
 export default Modal;
+
+export function openOverlay() {
+  let overlay = document.querySelector(".overlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
+  }
+  overlay.style.display = 'flex';
+}
+
+export function closeOverlay() {
+  const overlay = document.querySelector(".overlay");
+  if (overlay) {
+    overlay.style.display = 'none';
+  }
+}
+
+export function openModalOverlay() {
+  let overlay = document.querySelector(".modal-overlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.classList.add("modal-overlay");
+    document.body.appendChild(overlay);
+  }
+  overlay.style.display = 'flex';
+}
+
+export function closeModalOverlay() {
+  const overlay = document.querySelector(".modal-overlay");
+  if (overlay) {
+    overlay.style.display = 'none';
+  }
+}
+
+
