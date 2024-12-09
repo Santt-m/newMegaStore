@@ -1,0 +1,105 @@
+#beneficios,
+#features,
+#custom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  scroll-padding: 25vh 0 25vh 0;
+  & header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & h2 {
+      text-align: center;
+    }
+    &::before {
+      content: "";
+      width: 25%;
+      height: 0.5rem;
+      border-radius: 0.25rem;
+      background-image: linear-gradient(
+        to left,
+        var(--bg-primary),
+        var(--alt-primary)
+      );
+    }
+    &::after {
+      content: "";
+
+      width: 25%;
+      height: 0.5rem;
+      border-radius: 0.25rem;
+      background-image: linear-gradient(
+        to right,
+        var(--bg-primary),
+        var(--alt-primary)
+      );
+    }
+  }
+  & ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    & li {
+      display: flex;
+      flex-direction: column;
+      padding: 0.25rem 1.25rem;
+      aspect-ratio: 3 / 4;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      background-color: var(--alt-primary);
+      width: 250px;
+      border-radius: 0.5rem;
+      box-shadow: 0.25rem 0.25rem 0 0.25rem var(--bg-primary);
+      transform: translate(0, 0);
+      cursor: pointer;
+      transition: all 150ms ease-in-out;
+      text-align: center;
+      & img {
+        height: 5rem;
+        width: auto;
+      }
+      &:hover {
+        transform: translate(0.25rem, 0.25rem);
+        box-shadow: 0rem 0rem 0 0rem var(--bg-primary);
+        transition: all 150ms ease-in-out;
+      }
+      @media (max-width: 768px) {
+        box-shadow: 0rem 0rem 0 0.25rem var(--bg-primary);
+        transform: scale(0.8);
+        &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+#features ul {
+  justify-content: center;
+}
+
+#features header::before {
+  background-image: linear-gradient(
+    to left,
+    var(--alt-secondary),
+    var(--bg-secondary)
+  );
+}
+#features header::after {
+  background-image: linear-gradient(
+    to right,
+    var(--alt-secondary),
+    var(--bg-secondary)
+  );
+}

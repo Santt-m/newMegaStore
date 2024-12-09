@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { fetchDataList } from '../../data/dataIO.js';
 import "../components/header/header.js";
 import Modal from './modal.js';
@@ -178,3 +179,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     });
 });
+=======
+import './header.js'
+>>>>>>> f24e02508c35cf89d8f77159766c437313863bb1
